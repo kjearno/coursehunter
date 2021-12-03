@@ -1,0 +1,30 @@
+@use "./grid";
+
+.wrapper {
+  padding: 20px;
+}
+
+.container {
+  @include grid.make-container();
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.list {
+  @include grid.make-row();
+}
+
+.col {
+  @include grid.make-col-ready();
+
+  @include grid.media-breakpoint-up(sm) {
+    @include grid.make-col(6);
+  }
+
+  @include grid.media-breakpoint-up(lg) {
+    @include grid.make-col(12);
+  }
+}

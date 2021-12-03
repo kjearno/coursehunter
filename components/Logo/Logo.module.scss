@@ -1,0 +1,21 @@
+.logo {
+  margin-right: 20px;
+}
+
+.mini {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover {
+    color: #dad8de;
+  }
+}
+
+.logo,
+.link {
+  line-height: 1;
+}

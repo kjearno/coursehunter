@@ -1,0 +1,48 @@
+@use "./grid";
+
+.wrapper {
+  padding: 40px 0;
+}
+
+.container {
+  @include grid.make-container();
+}
+
+.title {
+  margin-top: 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  margin: 10px;
+  text-align: center;
+}
+
+.category {
+  display: inline-block;
+  width: 212px;
+  padding: 20px;
+  background-color: #392e5c;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    color: #dad8de;
+    text-decoration: underline #5d38db;
+  }
+
+  &.parent {
+    background: linear-gradient(132.55deg, #7f00ac 30%, #5d38db);
+  }
+}
+
+.categoryName {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}

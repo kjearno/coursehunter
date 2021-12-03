@@ -1,0 +1,11 @@
+@mixin link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #dad8de;
+    text-decoration: underline;
+  }
+}

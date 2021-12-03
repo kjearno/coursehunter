@@ -1,0 +1,20 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0.8;
+  padding: 7px 14px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #392e5c;
+  text-decoration: none;
+
+  &:hover {
+    color: #dad8de;
+    background-color: #7f00ac;
+  }
+}
+
+.logo {
+  margin-right: 10px;
+}

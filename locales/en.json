@@ -1,0 +1,63 @@
+{
+  "Breadcrumbs": {
+    "home": "Home"
+  },
+
+  "CourseCard": {
+    "premium": "Premium",
+    "lessons": "{{count}} lessons",
+    "view": "View"
+  },
+
+  "Footer": {
+    "copyrightText": "A resource for learning programming for front-end and back-end developers.",
+    "categories": "Categories",
+    "socials": [
+      { "id": 1, "name": "Telegram", "path": "/" },
+      { "id": 2, "name": "Forum", "path": "/" },
+      { "id": 3, "name": "Pricing", "path": "/" },
+      { "id": 4, "name": "Contacts", "path": "/" },
+      { "id": 5, "name": "Road map", "path": "/" },
+      { "id": 6, "name": "FAQ", "path": "/" }
+    ]
+  },
+
+  "Menu": {
+    "categories": "Categories",
+    "allCourses": "All courses"
+  },
+
+  "Course": {
+    "duration": "Duration",
+    "lessons": "Lessons",
+    "language": "Language",
+    "createdAt": "Added date"
+  },
+
+  "Courses": {
+    "title": "All the coursehunter courses",
+    "description": "Coursehunter is constantly working on adding new and updating existing courses on the site.",
+    "breadcrumbs": [{ "name": "All the coursehunter courses" }],
+    "allCourses": "All courses"
+  },
+
+  "Category": {
+    "title": "{{name}} - Video lessons, courses, tutorials"
+  },
+
+  "Categories": {
+    "title": "List of Categories",
+    "description": "CH is constantly working to replenish courses in existing categories and to organize new ones!",
+    "breadcrumbs": [{ "name": "List of Categories" }],
+    "allCategories": "All categories"
+  },
+
+  "Home": {
+    "title": "Video courses for developers",
+    "h1": "Learn It! - Developer courses",
+    "description": "Tutorials for front and back end developers. Take the knowledge of your profile from us, because we are fucking best. Seriously.",
+    "allCategories": "All categories",
+    "lastCourses": "Last added courses",
+    "allCourses": "All courses"
+  }
+}

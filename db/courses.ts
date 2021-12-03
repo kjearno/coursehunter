@@ -1,0 +1,58 @@
+export const courses = [
+  {
+    id: 1,
+    name: "Разработчик Next.js в 2022 году: C Нуля До Мастерства",
+    slug: "razrabotchik-next-js-v-2022-godu-c-nulya-do-masterstva",
+    secondaryName: "Complete Next.js Developer in 2022: Zero to Mastery",
+    description:
+      "Изучите Next JS у отраслевых экспертов, используя лучшие современные практики. Единственный курс Next JS + курс по проектам, который вам нужен, чтобы изучить Next JS, создавать приложения React корпоративного уровня с нуля и получить работу в качестве разработчика Next.js в 2022 году.",
+    poster: "/courses/1.jpg",
+    duration: "27:28:20",
+    lessons: "276",
+    language: "English",
+    createdAt: "27/10/2021",
+    categoryId: 1,
+  },
+  {
+    id: 2,
+    name: "Deno - Полное введение",
+    slug: "deno-polnoe-vvedenie",
+    secondaryName: "Deno - The Complete Introduction",
+    description:
+      "Узнайте все, что вам нужно для работы с Deno, совершенно новой средой выполнения JavaScript, созданной основателем Node.js Райаном Далом.",
+    poster: "/courses/2.jpg",
+    duration: "09:09:26",
+    lessons: "103",
+    language: "English",
+    createdAt: "29/09/2021",
+    categoryId: 8,
+  },
+  {
+    id: 3,
+    name: "Станьте 3D иллюстратором!",
+    slug: "stante-3d-illyustratorom",
+    secondaryName: "Become a 3D illustrator!",
+    description:
+      "3D может быть просто еще одним инструментом дизайна для достижения цели. Он находится на подъеме, и вы можете включить 3D-иллюстрацию в свой повседневный рабочий процесс. Я приготовил небольшой блокнот, чтобы вы могли убедиться сами. Сложная часть - знать, чему учиться. Охота на разбросанные по YouTube видеоролики и сборка пазлов могут занять много времени. А ваше время - это актив.",
+    poster: "/courses/3.jpg",
+    duration: "20:34:45",
+    lessons: "89",
+    language: "English",
+    createdAt: "11/06/2020",
+    categoryId: 17,
+  },
+  {
+    id: 4,
+    name: "Основы GraphQL",
+    slug: "osnovy-graphql",
+    secondaryName: "GraphQL Fundamentals",
+    description:
+      "GraphQL - это новый фантастический стандарт API, который обеспечивает более эффективную, мощную и гибкую альтернативу REST. В этом курсе вы изучите основы GraphQL.",
+    poster: "/courses/4.jpg",
+    duration: "00:23:32",
+    lessons: "5",
+    language: "English",
+    createdAt: "18/05/2020",
+    categoryId: 19,
+  },
+];

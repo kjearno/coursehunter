@@ -1,0 +1,17 @@
+@use "../../styles/grid";
+
+.wrapper {
+  padding: 24px 0;
+  box-shadow: 0 3px 21px rgb(117 117 117 / 8%);
+}
+
+.container {
+  @include grid.make-container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.side {
+  display: flex;
+  align-items: center;
+}

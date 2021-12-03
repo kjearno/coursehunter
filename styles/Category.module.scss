@@ -1,0 +1,53 @@
+@use "./grid";
+
+.wrapper {
+  margin-top: -120px;
+  padding-bottom: 20px;
+}
+
+.container {
+  @include grid.make-container();
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @include grid.media-breakpoint-up(sm) {
+    overflow-x: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #201c2b;
+  box-shadow: 0 3px 21px rgb(117 117 117 / 20%);
+
+  @include grid.media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include grid.media-breakpoint-up(sm) {
+    margin-right: 30px;
+  }
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}

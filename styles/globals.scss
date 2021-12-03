@@ -1,0 +1,41 @@
+@import "~sanitize.css";
+@import "~sanitize.css/assets.css";
+@import "~sanitize.css/forms.css";
+
+body {
+  margin: 0;
+  background: #201c2b;
+  color: #dad8de;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: #dad8de;
+
+  &:hover {
+    color: #5d38db;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}

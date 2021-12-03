@@ -1,0 +1,27 @@
+@use "../../styles/grid";
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 115px;
+  background: #392e5c;
+}
+
+.container {
+  @include grid.make-container();
+}
+
+.body {
+  max-width: 782px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 0;
+  font-size: 1.5rem;
+}

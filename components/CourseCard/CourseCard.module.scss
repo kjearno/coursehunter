@@ -1,0 +1,142 @@
+@use "../../styles/grid";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto 20px;
+
+  @include grid.media-breakpoint-up(sm) {
+    width: auto;
+  }
+
+  @include grid.media-breakpoint-up(lg) {
+    flex-direction: row;
+    outline: 1px solid #7f00ac;
+  }
+}
+
+.poster {
+  position: relative;
+  flex-shrink: 0;
+
+  img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+  @include grid.media-breakpoint-up(lg) {
+    flex-basis: 320px;
+  }
+}
+
+.premium {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  padding: 3px 21px;
+  background-color: #7f00ac;
+  color: #fff;
+  font-size: 0.8125rem;
+  line-height: 1.38;
+}
+
+.body {
+  flex-grow: 1;
+  overflow-x: hidden;
+  padding: 12px 20px 20px 20px;
+  background-color: #392e5c;
+
+  @include grid.media-breakpoint-up(lg) {
+    padding-top: 20px;
+  }
+}
+
+.name {
+  text-decoration: none;
+
+  h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.38;
+    text-transform: uppercase;
+
+    @include grid.media-breakpoint-up(lg) {
+      margin-bottom: 11px;
+      font-size: 1.25rem;
+      line-height: 1.35;
+    }
+  }
+
+  &:hover {
+    color: #dad8de;
+  }
+}
+
+.secondaryName {
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.name h3,
+.secondaryName {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  overflow: hidden;
+  max-width: 650px;
+  height: 133px;
+  margin: 0 0 20px;
+  font-size: 0.875rem;
+  line-height: 1.35;
+
+  @include grid.media-breakpoint-up(lg) {
+    height: 60px;
+    line-height: 1.5;
+  }
+}
+
+.info {
+  @include grid.media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -6px;
+    margin-bottom: -5.334px;
+  }
+}
+
+.infoList {
+  display: none;
+  white-space: nowrap;
+
+  @include grid.media-breakpoint-up(lg) {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.infoItem {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.infoValue {
+  margin-left: 6px;
+}
+
+.viewButton {
+  text-align: center;
+
+  @include grid.media-breakpoint-up(lg) {
+    text-align: left;
+  }
+}

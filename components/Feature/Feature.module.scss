@@ -1,0 +1,41 @@
+@use "../../styles/grid";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  display: none;
+  margin-right: 10px;
+  line-height: 1;
+
+  @include grid.media-breakpoint-up(sm) {
+    display: inline-block;
+  }
+}
+
+.body {
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.name {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.name {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.body {
+  overflow-x: hidden;
+}

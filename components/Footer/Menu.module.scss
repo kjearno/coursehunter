@@ -1,0 +1,18 @@
+.list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  padding-bottom: 7px;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  text-decoration: none;
+
+  &:hover {
+    color: #dad8de;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 0 -6px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.button {
+  padding-right: 0;
+  padding-left: 0;
+  border: 0;
+  margin: 0 6px;
+  cursor: pointer;
+  color: darken(#dad8de, 25%);
+  text-transform: uppercase;
+}
+
+.button.active {
+  cursor: auto;
+}
+
+.button.active,
+.button:hover {
+  color: #dad8de;
+  text-decoration: underline;
+}

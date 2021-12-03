@@ -1,0 +1,42 @@
+@use "../../styles/grid";
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  margin-top: 0;
+  margin-bottom: 35px;
+  list-style: none;
+}
+
+.item:not(:last-child) {
+  white-space: nowrap;
+
+  &:after {
+    display: inline-block;
+    padding: 0 8px;
+    margin-top: 3px;
+    content: url("/arrow-right.svg");
+    vertical-align: middle;
+  }
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover {
+    color: #dad8de;
+    text-decoration: underline;
+  }
+}
+
+.text {
+  margin-top: 1px;
+}
+
+.link,
+.text {
+  display: inline-block;
+  padding: 5px 0;
+  line-height: 1.2;
+}

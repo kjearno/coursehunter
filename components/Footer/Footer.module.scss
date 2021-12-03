@@ -1,0 +1,72 @@
+@use "../../styles/grid";
+
+.wrapper {
+  padding: 60px 0;
+  background-color: #392e5c;
+}
+
+.container {
+  @include grid.make-container();
+  margin-bottom: 20px;
+}
+
+.row {
+  @include grid.make-row();
+}
+
+.col {
+  @include grid.make-col-ready();
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  @include grid.media-breakpoint-up(sm) {
+    &:nth-child(1) {
+      @include grid.make-col(5);
+    }
+
+    &:nth-child(2) {
+      @include grid.make-col(7);
+      display: block;
+    }
+  }
+
+  @include grid.media-breakpoint-up(lg) {
+    &:nth-child(1) {
+      @include grid.make-col(3);
+      margin-right: 40px;
+    }
+
+    &:nth-child(2) {
+      @include grid.make-col(4);
+    }
+  }
+}
+
+.copyright {
+  max-width: 230px;
+}
+
+.copyrightText {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.nav {
+  display: flex;
+}
+
+.navSide {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.title {
+  margin: 0 0 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

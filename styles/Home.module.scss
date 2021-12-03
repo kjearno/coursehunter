@@ -1,0 +1,65 @@
+@use "./grid";
+
+.welcome {
+  @include grid.make-container();
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.title {
+  margin: 0 0 10px;
+  line-height: 1.21;
+}
+
+.description {
+  max-width: 590px;
+  margin: 0 0 15px;
+  line-height: 1.375;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.categoriesAll {
+  padding-right: 44px;
+  padding-left: 44px;
+}
+
+.courses {
+  @include grid.make-container();
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.coursesTitle {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.coursesList {
+  @include grid.make-row();
+  margin-bottom: 5px;
+}
+
+.coursesCol {
+  @include grid.make-col-ready();
+
+  @include grid.media-breakpoint-up(sm) {
+    @include grid.make-col(6);
+  }
+
+  @include grid.media-breakpoint-up(lg) {
+    @include grid.make-col(12);
+  }
+}
+
+.coursesAll {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.coursesButton {
+  width: 100%;
+  text-align: center;
+}
