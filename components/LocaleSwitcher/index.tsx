@@ -1,5 +1,4 @@
 import classNames from "classnames/bind";
-
 import { useSwitcher } from "../../shared/i18n";
 import styles from "./LocaleSwitcher.module.scss";
 

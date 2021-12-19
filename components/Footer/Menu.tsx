@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import * as types from "../../shared/types";
 import styles from "./Menu.module.scss";
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { defaultData } from "./defaultData";
 import { LocaleContext } from "./LocaleContext";
 import * as types from "./types";

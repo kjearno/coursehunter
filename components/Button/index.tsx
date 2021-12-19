@@ -1,6 +1,5 @@
 import classNames from "classnames/bind";
 import Link from "next/link";
-
 import styles from "./Button.module.scss";
 
 interface Props {
