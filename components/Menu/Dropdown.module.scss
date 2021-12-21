@@ -1,4 +1,4 @@
-@use "../../styles/grid";
+@use "grid-mixins" as grid;
 @use "./mixins";
 
 .wrapper {

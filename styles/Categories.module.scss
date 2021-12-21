@@ -1,4 +1,4 @@
-@use "./grid";
+@use "grid-mixins" as grid;
 
 .wrapper {
   padding: 40px 0;
